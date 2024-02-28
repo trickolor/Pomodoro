@@ -1,0 +1,90 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 500px;
+    padding: 10px;
+    background-color: var(--deep-red);
+    border-radius: 10px;
+}
+
+.container:nth-child(2) {
+    background-color: var(--lime-green);
+}
+
+.container:nth-child(3) {
+    background-color: var(--olive-green);
+}
+
+.container:nth-child(4) {
+    background-color: var(--medium-gray);
+}
+
+.container:nth-child(5) {
+    background-color: var(--dark-gray);
+    margin-bottom: 30px;
+}
+
+.inputName {
+    font-family: SF UI Display;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px;
+    color: var(--white);
+}
+
+.inputBox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.buttonLeft {
+    transform: rotate(-180deg);
+}
+
+.buttonLeft:focus,
+.buttonRight:focus {
+    outline: none;
+}
+
+.input {
+    font-family: SF UI Display;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 18px;
+    color: var(--dark-gray);
+    padding: 10px;
+    border-radius: 50%;
+    width: 55px;
+    height: 40px;
+    text-align: center;
+    border: none;
+    background-color: var(--white);
+}
+
+.checkbox {
+    display: none;
+    position: absolute;
+}
+
+.label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--dark-gray);
+    padding: 10px;
+    border-radius: 50%;
+    width: 55px;
+    height: 40px;
+    border: none;
+    margin-right: 20px;
+    background-color: var(--white);
+    cursor: pointer;
+}
+
+.input:focus {
+    outline: none;
+}

@@ -1,0 +1,26 @@
+.container {
+    position: relative;
+    width: 50px;
+    height: 25px;
+    border-radius: 15px;
+    background-color: var(--dark-red);
+    padding: 5px;
+    cursor: pointer;
+}
+
+.container:hover {
+    background-color: var(--deep-red);
+}
+
+.circle {
+    position: absolute;
+    top: 3.5px;
+    left: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 18px;
+    height: 18px;
+    background-color: var(--white);
+    border-radius: 50%;
+}

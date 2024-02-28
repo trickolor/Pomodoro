@@ -1,0 +1,73 @@
+.header {
+    box-shadow: var(--box-shadow);
+    background-color: var(--white);
+    margin-bottom: 100px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: calc(100% - 160px);
+    max-width: 1280px;
+    padding: 15px 0;
+    margin: 0 auto;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logoText {
+    color: var(--dark-red);
+    font-size: 24px;
+    font-family: 'SF UI Display';
+    font-weight: 300;
+    line-height: 24px;
+    word-wrap: break-word;
+    user-select: none;
+}
+
+.buttonStats,
+.buttonTimer,
+.buttonSettings {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: var(--dark-red);
+    font-size: 16px;
+    font-family: 'SF UI Display';
+    font-weight: 400;
+    line-height: 17px;
+    word-wrap: break-word;
+    transition: all 0.3s ease-in-out;
+}
+
+.buttonStats path,
+.buttonTimer path,
+.buttonSettings svg {
+    transition: all 0.3s ease-in-out;
+}
+
+.buttonStats:hover,
+.buttonTimer:hover,
+.buttonSettings:hover {
+    color: var(--deep-red);
+}
+
+.buttonStats:hover path,
+.buttonSettings:hover svg {
+    fill: var(--deep-red);
+}
+
+.buttonTimer:hover path {
+    stroke: var(--deep-red);
+}
+
+.buttonBox {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}

@@ -1,0 +1,51 @@
+.container {
+    position: relative;
+}
+
+.valueYellow,
+.valueRed,
+.valueGray {
+    font-size: 150px;
+    font-family: 'SF UI Display';
+    font-weight: 200;
+    word-wrap: break-word;
+    display: block;
+    user-select: none;
+}
+
+.valueGray {
+    color: var(--dark-gray);
+}
+
+.valueRed {
+    color: var(--dark-red);
+}
+
+.valueYellow {
+    color: var(--lime-green);
+}
+
+.button,
+.buttonDisabled {
+    position: absolute;
+    top: 66px;
+    right: -75px;
+}
+
+.buttonDisabled {
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+.button circle {
+    transition: all 0.3s ease-in-out;
+}
+
+.button:hover circle,
+.button:focus circle {
+    fill: var(--olive-green);
+}
+
+.button:focus {
+    outline: none;
+}

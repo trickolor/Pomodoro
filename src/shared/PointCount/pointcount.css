@@ -1,0 +1,44 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: var(--extra-light-gray);
+}
+
+.tomatoSmile:hover {
+    transform: rotate(360deg);
+    transition: all 0.3s ease-in-out;
+}
+
+.graphicCount {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding-top: 23px;
+    margin-bottom: 23px;
+}
+
+.quantity {
+    color: var(--medium-gray);
+    font-size: 24px;
+    font-family: 'SF UI Display';
+    font-weight: 700;
+    line-height: 33px;
+    word-wrap: break-word;
+}
+
+.textCount {
+    color: var(--white);
+    font-size: 24px;
+    font-family: 'SF UI Display';
+    font-weight: 700;
+    line-height: 33px;
+    word-wrap: break-word;
+    width: 100%;
+    padding: 9px 0;
+    background-color: var(--dark-red);
+    text-align: center;
+}

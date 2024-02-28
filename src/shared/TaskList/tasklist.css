@@ -1,0 +1,13 @@
+.list {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 19px;
+}
+
+.listItem:nth-child(n) div {
+    border-top: none;
+}
+
+.listItem:first-child div {
+    border-top: 1px solid var(--extra-light-gray);
+}

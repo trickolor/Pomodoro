@@ -1,0 +1,41 @@
+.container {
+    max-width: 507px;
+    margin-bottom: 25px;
+}
+
+.title {
+    color: var(--dark-gray);
+    font-size: 24px;
+    font-family: 'SF UI Display';
+    font-weight: 700;
+    line-height: 33px;
+    word-wrap: break-word;
+    display: block;
+    width: fit-content;
+    margin: 0;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+}
+
+.dot {
+    color: var(--deep-red);
+    font-size: 16px;
+    font-family: 'SF UI Display';
+    font-weight: 400;
+    line-height: 33px;
+    word-wrap: break-word;
+}
+
+.listItem {
+    color: var(--dark-gray);
+    font-size: 16px;
+    font-family: 'SF UI Display';
+    font-weight: 400;
+    line-height: 33px;
+    word-wrap: break-word;
+    display: flex;
+    gap: 15px;
+}

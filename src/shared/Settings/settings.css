@@ -1,0 +1,96 @@
+.container {
+    position: fixed;
+    top: calc(50% - (485px / 2));
+    left: calc(50% - 333px);
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px 83px;
+    background-color: var(--white);
+}
+
+.title {
+    color: var(--dark-gray);
+    font-size: 24px;
+    font-family: 'SF UI Display';
+    font-weight: 700;
+    line-height: 33px;
+    word-wrap: break-word;
+    display: block;
+    width: fit-content;
+    margin: 0;
+    margin-bottom: 25px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.buttonBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.submitButton,
+.resetButton,
+.closeButton {
+    font-size: 16px;
+    font-family: 'SF UI Display';
+    font-weight: 500;
+    line-height: 17px;
+    word-wrap: break-word;
+    padding: 15px 30px;
+}
+
+.submitButton {
+    background-color: var(--lime-green);
+    color: var(--white);
+    transition: all 0.3s ease-in-out;
+}
+
+.submitButton:hover,
+.submitButton:focus {
+    background-color: var(--olive-green);
+    outline: none;
+}
+
+.resetButton {
+    color: var(--dark-red);
+    outline: 2px var(--dark-red) solid;
+    transition: all 0.3s ease-in-out;
+}
+
+.resetButton:hover,
+.resetButton:focus {
+    color: var(--white);
+    background-color: var(--dark-red);
+    outline: none;
+}
+
+.closeButton {
+    color: var(--light-gray);
+    outline: 2px var(--light-gray) solid;
+    background-color: transparent;
+    transition: all 0.3s ease-in-out;
+}
+
+.closeButton:hover,
+.closeButton:focus {
+    color: var(--dark-gray);
+    outline-color: var(--dark-gray);
+}
+
+.crossButton {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    transition: all 0.3s ease-in-out;
+}
+
+.crossButton:hover,.crossButton:focus {
+    transform: scale(1.05);
+}

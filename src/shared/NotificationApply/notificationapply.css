@@ -1,0 +1,85 @@
+.container {
+    position: fixed;
+    top: calc((100% - 320px) / 2);
+    left: calc((100% - 450px) / 2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--white);
+    max-width: 450px;
+    padding: 25px 50px;
+}
+
+.title {
+    font-family: SF UI Display;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 17px;
+    color: var(--dark-gray);
+    display: block;
+    width: fit-content;
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+.paragraph {
+    color: var(--dark-gray);
+    font-size: 16px;
+    font-family: 'SF UI Display';
+    font-weight: 400;
+    line-height: 22px;
+    word-wrap: break-word;
+    margin: 0;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.applyButton,
+.denyButton {
+    font-size: 16px;
+    font-family: 'SF UI Display';
+    font-weight: 500;
+    line-height: 17px;
+    word-wrap: break-word;
+    padding: 15px 50px;
+}
+
+.applyButton {
+    background-color: var(--lime-green);
+    color: var(--white);
+    transition: all 0.3s ease-in-out;
+    margin-bottom: 15px;
+}
+
+.applyButton:hover,
+.applyButton:focus {
+    outline: none;
+    background-color: var(--olive-green);
+}
+
+.denyButton {
+    color: var(--dark-red);
+    outline: 2px var(--dark-red) solid;
+    transition: all 0.3s ease-in-out;
+}
+
+.denyButton:hover,
+.denyButton:focus {
+    color: var(--white);
+    background-color: var(--dark-red);
+    outline: none;
+}
+
+.closeButton {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    transition: all 0.3s ease-in-out;
+}
+
+.closeButton:hover,
+.closeButton:focus {
+    outline: none;
+    transform: scale(1.05);
+}

@@ -1,0 +1,62 @@
+.container {
+    max-width: 1280px;
+    width: calc(100% - 160px);
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+
+.grid {
+    display: grid;
+    grid-template-rows: 260px 180px 180px;
+    grid-template-columns: 296px 450px 450px;
+    gap: 32px;
+}
+
+.chartGrid {
+    grid-row: span 2;
+    grid-column: span 2;
+    display: grid;
+    grid-template-columns: 843px 77px;
+    grid-template-rows: 420px 51px;
+    column-gap: 32px;
+    width: fit-content;
+    background-color: var(--extra-light-gray);
+}
+
+.chartElement:last-child {
+    grid-column: span 2;
+}
+
+.metricsGrid {
+    background-color: transparent;
+    grid-column: span 3;
+    display: grid;
+    grid-template-columns: 405px 405px 405px;
+    grid-template-rows: 180px;
+    gap: 32px;
+    width: fit-content;
+}
+
+.metricsElement {
+    background-color: var(--light-blue);
+}
+
+.topLine {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.title {
+    color: var(--dark-gray);
+    font-size: 24px;
+    font-family: 'SF UI Display';
+    font-weight: 700;
+    line-height: 33px;
+    word-wrap: break-word;
+    display: block;
+    width: fit-content;
+    margin: 0;
+}

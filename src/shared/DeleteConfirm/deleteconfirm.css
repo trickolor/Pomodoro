@@ -1,0 +1,82 @@
+.modal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 200vh;
+    background-color: rgba(0, 0, 0, 0.50);
+}
+
+.container {
+    position: fixed;
+    top: calc(50% - (175px / 2));
+    left: calc(50% - 175px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px 83px;
+    background-color: var(--white);
+}
+
+.title {
+    color: var(--dark-gray);
+    font-size: 24px;
+    font-family: 'SF UI Display';
+    font-weight: 400;
+    line-height: 17px;
+    word-wrap: break-word;
+    display: block;
+    width: fit-content;
+    margin: 0;
+    margin-bottom: 25px;
+}
+
+.deleteButton {
+    color: var(--white);
+    font-size: 16px;
+    font-family: 'SF UI Display';
+    font-weight: 500;
+    line-height: 17px;
+    word-wrap: break-word;
+    padding: 15px 50px;
+    background-color: var(--dark-red);
+    margin-bottom: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.deleteButton:hover,
+.deleteButton:focus {
+    background-color: var(--deep-red);
+    outline: none;
+}
+
+.cancelButton {
+    color: var(--dark-gray);
+    font-size: 16px;
+    font-family: 'SF UI Display';
+    font-weight: 300;
+    line-height: 17px;
+    word-wrap: break-word;
+    border-bottom: 1px solid var(--dark-gray);
+    transition: all 0.3s ease-in-out;
+}
+
+.cancelButton:hover,
+.cancelButton:focus {
+    color: var(--medium-gray);
+    border-bottom-color: var(--medium-gray);
+    outline: none;
+}
+
+.crossButton {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    transition: all 0.3s ease-in-out;
+}
+
+.crossButton:hover,
+.crossButton:focus {
+    transform: scale(1.05);
+    outline: none;
+}

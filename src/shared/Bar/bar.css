@@ -1,0 +1,27 @@
+.bar,
+.barNull,
+.barSelected {
+  position: relative;
+  z-index: 10;
+  width: 77px;
+  cursor: pointer;
+}
+
+.barSelected {
+  background-color: var(--dark-red);
+}
+
+.bar {
+  background-color: var(--peach);
+}
+
+.barNull {
+  background-color: var(--light-gray);
+  transition: all 0.3s ease-in-out;
+
+}
+
+.barNull:hover,
+.barNull:focus {
+  background-color: var(--peach);
+}

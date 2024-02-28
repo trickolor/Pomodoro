@@ -1,0 +1,42 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-bottom: 25px;
+}
+
+.input {
+    color: var(--medium-gray);
+    font-size: 16px;
+    font-family: 'SF UI Display';
+    font-weight: 300;
+    line-height: 17px;
+    word-wrap: break-word;
+    width: 340px;
+    border: none;
+    padding: 19px 15px;
+    background-color: var(--extra-light-gray);
+}
+
+.input:focus {
+    outline: none;
+}
+
+.button {
+    color: var(--white);
+    font-size: 16px;
+    font-family: 'SF UI Display';
+    font-weight: 500;
+    line-height: 17px;
+    word-wrap: break-word;
+    width: fit-content;
+    padding: 15px 50px;
+    background-color: var(--lime-green);
+    transition: all 0.3s ease-in-out;
+}
+
+.button:hover,
+.button:focus {
+    background-color: var(--olive-green);
+    outline: none;
+}
